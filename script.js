@@ -22,10 +22,10 @@ new Vue({
              name:'Undefeatable tictactoe game',
              id:'pro1'
          },{
-             img:'./src/imgs/',
-             link:'https://naderjs.github.io/parallaxstuff',
-             codelink:'https/github.com/NaderJS/parallaxstuf',
-             name:'some Parallax stuff',
+             img:'./src/imgs/pomo.png',
+             link:'https://naderjs.github.io/Pomodro',
+             codelink:'https/github.com/NaderJS/Pomodro/',
+             name:'a Pomodoro clock',
              id:'pro2'
          },{
              img:'./src/imgs/twitch.png',
