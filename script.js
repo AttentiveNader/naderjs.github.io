@@ -24,7 +24,7 @@ new Vue({
          },{
              img:'./src/imgs/pomo.png',
              link:'https://naderjs.github.io/Pomodro',
-             codelink:'https/github.com/NaderJS/Pomodro/',
+             codelink:'https://github.com/NaderJS/Pomodro/',
              name:'a Pomodoro clock',
              id:'pro2'
          },{
