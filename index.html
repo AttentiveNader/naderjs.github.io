@@ -10,13 +10,13 @@
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
-    
+
     <title>Nader Atef's resume</title>
 </head>
 
 <body>
     <div id="app">
-        
+
 <div id="nav">
 <div style="float:left;"><h2> < Nader Atef >   </h2></div>
 <div style="float:right;"><h2> < /Nader Atef >  </h2></div>
@@ -27,9 +27,9 @@
 </el-row>
 </div>
 
-<el-row type="flex" class="row-bg" justify="center">  
+<el-row type="flex" class="row-bg" justify="center">
   <div id="about">
-   
+
    <h1>About me </h1>
     <p>I'm a front end web developer </p>
     <p>My name is Nader Atef from Egypt I like web development specially doing algorithms with javascript,</p> <p> I also like  using SCSS/Sass its just easier to use than normal CSS </p>
@@ -37,16 +37,16 @@
     <div id="skills">
         <span class="demonstration">HTML</span>
          <el-progress  :text-inside="true" :show-text="true" :stroke-width="30" :percentage="90" status="">HTML</el-progress>
-        <span class="demonstration">Javascript/jQuery/VueJS</span>
+        <span class="demonstration">Javascript/jQuery/VueJS & VueX</span>
          <el-progress :text-inside="true"  :show-text="true"  :stroke-width="30" :percentage="100" status="success">Javascript/jQuery/VueJS</el-progress>
         <span class="demonstration">CSS/SCSS</span>
         <el-progress :text-inside="true" :show-text="true"  :stroke-width="30" :percentage="85" status="">CSS/SCSS/Sass</el-progress>
           <span class="demonstration">Responsive design</span>
-        <el-progress :text-inside="true" :show-text="true"  :stroke-width="30" :percentage="86" status="">CSS/SCSS/Sass</el-progress> 
+        <el-progress :text-inside="true" :show-text="true"  :stroke-width="30" :percentage="86" status="">CSS/SCSS/Sass</el-progress>
     </div>
   <div id='social'>
       <h3>You can find more social information about me on
-        
+
       </h3>
         <div v-for="el in socialArray">
        <a v-bind:href="el.link"><img v-bind:src="el.src" /></a>
@@ -60,8 +60,8 @@
         <h1>My Portfolio</h1>
       <h2>Here are some of My projects</h2>
       <el-carousel id="caros" :interval="5000" arrow="always"  height="400">
-          <el-carousel-item class="projects" v-bind:id="pro.id" v-for="pro in projects"> 
-         <a :href="pro.link" target="_new"> <h3>{{pro.name}}</h3></a>    
+          <el-carousel-item class="projects" v-bind:id="pro.id" v-for="pro in projects">
+         <a :href="pro.link" target="_new"> <h3>{{pro.name}}</h3></a>
           <a v-bind:href="pro.link" target="_new"><img  v-bind:src="pro.img" alt="project screenshot"/></a>
               <a v-bind:href="pro.codeLink">Porject code link</a>
           </el-carousel-item>
@@ -79,8 +79,8 @@
           <img src="./src/imgs/fcc.png" alt="FCC certificate">
       </div>
       <div id="contact" >
-        <h2>Contact me</h2>  
-        
+        <h2>Contact me</h2>
+
 <el-form label-position="top"  v-model="form" label-width="50%" action="https://formspree.io/legandryeagle@gmail.com"
       method="POST">
     <el-form-item label='Your name'>
