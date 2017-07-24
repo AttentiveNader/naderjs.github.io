@@ -17,14 +17,14 @@ new Vue({
      projects:[
          {
              img:'./src/imgs/tictac.png',
-             link:'https://naderjs.lib.id/ticvue@dev/#/',
+             link:'https://naderjs.lib.id/ticvue@dev/',
              codeLink:'https://github.com/NaderJS/libticVue',
              name:'Undefeatable tictactoe game',
              id:'pro1'
          },{
              img:'./src/imgs/pomo.png',
              link:'https://naderjs.github.io/Pomodro',
-             codelink:'https://github.com/NaderJS/Pomodro/',
+             codeLink:'https://github.com/NaderJS/Pomodro/',
              name:'a Pomodoro clock',
              id:'pro2'
          },{
@@ -40,10 +40,10 @@ new Vue({
              name:'a simple simon game',
              id:'pro4'
          },{
-             img:'./src/imgs/wiki.png',
-             link:'https://codepen.io/Nader_Camper/full/rmQeQB',
-             codeLink:'https://codepen.io/Nader_Camper/pen/rmQeQB',
-             name:'Wiki Search',
+             img:'./src/imgs/notes.png',
+             link:'https://naderjs.lib.id/notesApp@dev/',
+             codeLink:'https://github.com/NaderJS/notesapp',
+             name:'Notes App',
              id:'pro5'
          }
      ],
@@ -66,8 +66,8 @@ new Vue({
     },
     mounted:function(){
       let self = this
-      self.el=document.getElementById('about'); 
-      
+      self.el=document.getElementById('about');
+
     },
     computed:{
         scrControl:function(){
