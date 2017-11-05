@@ -1,0 +1,259 @@
+/* line 1, /home/nader/myResume/src/style.scss */
+* {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* line 4, /home/nader/myResume/src/style.scss */
+body {
+  margin-top: 50px;
+  background: #000;
+}
+
+/* line 9, /home/nader/myResume/src/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 13, /home/nader/myResume/src/style.scss */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  z-index: 4;
+  background: #3dd0fc;
+  color: #d3ddff;
+}
+
+/* line 23, /home/nader/myResume/src/style.scss */
+#nav a {
+  color: #000;
+}
+
+/* line 26, /home/nader/myResume/src/style.scss */
+#nav div {
+  margin: 0  auto;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 32, /home/nader/myResume/src/style.scss */
+  #nav h1, #nav h2 {
+    display: none;
+  }
+}
+
+/* line 36, /home/nader/myResume/src/style.scss */
+#nav h1, #nav h2 {
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 43, /home/nader/myResume/src/style.scss */
+#nav h4, #nav h3 {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/* line 50, /home/nader/myResume/src/style.scss */
+#skills {
+  margin-top: 20px;
+}
+
+/* line 53, /home/nader/myResume/src/style.scss */
+#about {
+  margin-top: 50px;
+  background: fixed;
+  overflow: hidden;
+  color: #d3ddff;
+  padding: 7px;
+  text-align: center;
+}
+
+/* line 61, /home/nader/myResume/src/style.scss */
+#about h1, #about p, #about h2, #about h3 {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* line 71, /home/nader/myResume/src/style.scss */
+#social {
+  margin-top: 40px;
+}
+
+/* line 73, /home/nader/myResume/src/style.scss */
+#social h3, #social h2, #social h4 {
+  float: left;
+}
+
+/* line 76, /home/nader/myResume/src/style.scss */
+#social div {
+  float: right;
+}
+
+/* line 79, /home/nader/myResume/src/style.scss */
+#social img {
+  padding: 2px;
+  background: #fff;
+  border: 1px solid #3dd0fc;
+  margin-left: 5px;
+}
+
+/* line 86, /home/nader/myResume/src/style.scss */
+#Portfolio {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+
+/* line 93, /home/nader/myResume/src/style.scss */
+#Portfolio img {
+  max-width: 94%;
+  max-height: auto;
+}
+
+/* line 98, /home/nader/myResume/src/style.scss */
+.projects {
+  text-align: center;
+  background: #3dd0fc;
+}
+
+/* line 102, /home/nader/myResume/src/style.scss */
+.projects img {
+  float: right;
+  margin-right: 1%;
+  padding: 5px;
+  max-width: 270px;
+  max-height: auto;
+  background: #000;
+}
+
+/* line 109, /home/nader/myResume/src/style.scss */
+.projects img:hover {
+  padding: 6px;
+}
+
+/* line 115, /home/nader/myResume/src/style.scss */
+#more {
+  margin: 0 auto;
+}
+
+/* line 123, /home/nader/myResume/src/style.scss */
+#more img {
+  margin: o auto;
+  max-width: 50px;
+  max-height: auto;
+  border-radius: 50%;
+}
+
+/* line 128, /home/nader/myResume/src/style.scss */
+#more img:hover {
+  background: #3dd0fc;
+  padding: 2px;
+}
+
+/* line 136, /home/nader/myResume/src/style.scss */
+#contactform {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: 20%;
+  width: 50%;
+  display: block;
+}
+
+/* line 143, /home/nader/myResume/src/style.scss */
+#contactform h1, #contactform h2, #contactform h3 {
+  display: block;
+  float: left;
+}
+
+/* line 147, /home/nader/myResume/src/style.scss */
+#contactform input {
+  display: block;
+  float: left;
+}
+
+/* line 151, /home/nader/myResume/src/style.scss */
+#contactform textarea {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* line 157, /home/nader/myResume/src/style.scss */
+#contact {
+  margin: 0 auto;
+  background: #fff;
+  width: 50%;
+  display: block;
+}
+
+/* line 163, /home/nader/myResume/src/style.scss */
+#contact h2 {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 168, /home/nader/myResume/src/style.scss */
+#contact input, #contact textarea {
+  padding: 5px;
+}
+
+/* line 171, /home/nader/myResume/src/style.scss */
+#contact [type="text"] {
+  margin: 0 auto;
+}
+
+/* line 174, /home/nader/myResume/src/style.scss */
+#contact [type="text"]:focus {
+  box-shadow: 2px 2px 4px #000,-2px -2px 4px #000;
+}
+
+/* line 178, /home/nader/myResume/src/style.scss */
+#contact [type="email"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 182, /home/nader/myResume/src/style.scss */
+#contact [type="email"]:focus {
+  box-shadow: 2px 2px 4px #000,-2px -2px 4px #000;
+}
+
+/* line 186, /home/nader/myResume/src/style.scss */
+#contact [name="message"] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+}
+
+/* line 191, /home/nader/myResume/src/style.scss */
+#contact [name="message"]:focus {
+  box-shadow: 2px 2px 4px #000,-2px -2px 4px #000;
+}
+
+/* line 195, /home/nader/myResume/src/style.scss */
+#contact [type="submit"] {
+  float: right;
+  padding: 5px;
+  background: #3dd0fc;
+  border-radius: 10px;
+}
+
+/* line 202, /home/nader/myResume/src/style.scss */
+#footer {
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #d3ddff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=../style.map */

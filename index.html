@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nader Atef's resume , A front end web developer ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/element.css">
+
+    <title>Nader Atef's resume</title>
+</head>
+
+<body>
+    <div id="app">
+
+<div id="nav">
+<div style="float:left;"><h2> < Nader Atef >   </h2></div>
+<div style="float:right;"><h2> < /Nader Atef >  </h2></div>
+<el-row  type="flex" class="row-bg" justify="center">
+<div><a href="#about"><h3>About</h3></a></div>
+<div><a href="#Portfolio"><h3>Portfolio</h3></a></div>
+<div><a href="#contact"><h3>Contact</h3></a></div>
+</el-row>
+</div>
+
+<el-row type="flex" class="row-bg" justify="center">
+  <div id="about">
+
+   <h1>About me </h1>
+    <p>I'm a front end web developer </p>
+    <p>My name is Nader Atef from Egypt I like web development especially doing algorithms with javascript,</p> <p> I also like  using SCSS/Sass its just easier to use than normal CSS </p>
+    <h3>here are my  main skills</h3>
+    <div id="skills">
+        <span class="demonstration">HTML</span>
+         <el-progress  :text-inside="true" :show-text="true" :stroke-width="30" :percentage="90" status="">HTML</el-progress>
+        <span class="demonstration">Javascript/jQuery/VueJS/VueX</span>
+         <el-progress :text-inside="true"  :show-text="true"  :stroke-width="30" :percentage="100" status="success">Javascript/jQuery/VueJS</el-progress>
+        <span class="demonstration">CSS/SCSS</span>
+        <el-progress :text-inside="true" :show-text="true"  :stroke-width="30" :percentage="85" status="">CSS/SCSS/Sass</el-progress>
+          <span class="demonstration">Responsive design</span>
+        <el-progress :text-inside="true" :show-text="true"  :stroke-width="30" :percentage="86" status="">CSS/SCSS/Sass</el-progress>
+    </div>
+  <div id='social'>
+      <h3>You can find more social information about me on
+
+      </h3>
+        <div v-for="el in socialArray">
+       <a v-bind:href="el.link"><img v-bind:src="el.src" /></a>
+      </div>
+  </div>
+  </div>
+    </el-row>
+
+
+    <div id="Portfolio">
+        <h1>My Portfolio</h1>
+      <h2>Here are some of My projects</h2>
+      <el-carousel id="caros" :interval="5000" arrow="always"  height="400">
+          <el-carousel-item class="projects" v-bind:id="pro.id" v-for="pro in projects">
+         <a :href="pro.link" target="_new"> <h3>{{pro.name}}</h3></a>
+          <a v-bind:href="pro.link" target="_new"><img  v-bind:src="pro.img" alt="project screenshot"/></a>
+              <a v-bind:href="pro.codeLink">Porject code link</a>
+          </el-carousel-item>
+      </el-carousel>
+      <el-row type="flex" clas='row-bg' justify="center" >
+      <div id="more">
+          <h3>You can find more of my code on</h3>
+          <div v-for="el in codeArray">
+              <a :href="el.link" target="_new"><img :src="el.img"/></a>
+          </div>
+      </div>
+      </el-row>
+      <div id="certif">
+          <h2>I also have a certificate from FCC</h2>
+          <img src="./src/imgs/fcc.png" alt="FCC certificate">
+      </div>
+      <div id="contact" >
+        <h2>Contact me</h2>
+
+<el-form label-position="top"  v-model="form" label-width="50%" action="https://formspree.io/legandryeagle@gmail.com"
+      method="POST">
+    <el-form-item label='Your name'>
+    <input type="text" name="name">
+    </el-form-item>
+    <el-form-item label='Your Email'>
+    <input type="email" name="_replyto">
+    </el-form-item>
+    <el-form-item label="Your message">
+        <textarea name="message" >
+
+        </textarea>
+        </el-form-item>
+    <input type="submit" value="Send">
+</el-form>
+
+      </div>
+      <div style="margin: 20px; display:block;">.</div>
+    </div>
+    </div>
+    <div id='footer'>
+     <h2>And you can also email me on </h2>
+       <h4>nader_atef80@outlook.com</h4>
+    </div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./script.js"></script>
+</html>
